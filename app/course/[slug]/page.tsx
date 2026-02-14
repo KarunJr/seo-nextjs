@@ -34,14 +34,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const course = getCourse((await params).slug);
   if (!course) return notFound();
+  const title = `${course.title} - Learn Online with ${course.provider} | StartHub Academy`;
+
+  const description = `${course.description} Enroll now at StartHub Academy and gain real-world skills through expert-led training by ${course.provider}.`;
 
   return {
     metadataBase: new URL(baseUrl),
-    title: `${course.title} - Learn Online with ${course.provider} | StartHub Academy`,
-    description: `${course.description} Enroll now at StartHub Academy and gain real-world skills through expert-led training by ${course.provider}.`,
+    title,
+    description,
     openGraph: {
-      title: course.title,
-      description: course.description,
+      title,
+      description,
       type: "website",
       siteName: "StartHub Academy",
       url: `/course/${course.slug}`,

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "nextjs-mastery",
+    "title": "Next.js Mastery",
+    "description": "Learn the App Router and SSR from scratch.",
+    "provider": "StartHub Academy"
+  },
+  {
+    "slug": "reactjs-mastery",
+    "title": "React JS Mastery",
+    "description": "Learn React from scratch.",
+    "provider": "StartHub Academy"
+  },
+  {
+    "slug": "nodejs-masterclass",
+    "title": "Node.js Masterclass",
+    "description": "Master backend development with Node.js and Express.",
+    "provider": "StartHub Academy"
+  },
+  {
+    "slug": "typescript-complete-guide",
+    "title": "TypeScript Complete Guide",
+    "description": "Deep dive into TypeScript for scalable JS projects.",
+    "provider": "StartHub Academy"
+  },
+  {
+    "slug": "fullstack-javascript",
+    "title": "Fullstack JavaScript",
+    "description": "Build complete applications with React, Node, and MongoDB.",
+    "provider": "StartHub Academy"
+  }
+]

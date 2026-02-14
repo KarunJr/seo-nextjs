@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props) {
 
   return {
     metadataBase: new URL(baseUrl),
-    title: course.title,
-    description: course.description,
+    title: `${course.title} - Learn Online with ${course.provider} | StartHub Academy`,
+    description: `${course.description} Enroll now at StartHub Academy and gain real-world skills through expert-led training by ${course.provider}.`,
     openGraph: {
       title: course.title,
       description: course.description,
